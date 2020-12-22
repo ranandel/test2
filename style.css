@@ -1,0 +1,131 @@
+body{
+margin: 0 auto;
+max-width: 1300px;
+}
+.header{
+height: 85px;
+background-color: #ffffff;
+display: flex;
+margin: 0 auto;
+justify-content: center;
+align-items: center;
+}
+.header img{
+height: 40px;
+width: 215px;
+margin-right: 20px; 
+}
+.header nav{
+position: relative;
+}
+.header ul {
+list-style: none; 
+margin: 0;
+padding-left: 0;
+}
+.header li a {
+padding: 35px 20px;
+text-decoration: none;
+color: #666666;
+}
+.header li a:hover{
+background-color: #bcda5c;
+padding: 35px 20px;
+transition: background 0.5s;
+}
+.header li{
+float: left;
+}
+.header .login{
+height: 37px;
+width: 100px;
+border-radius: 20px;
+background-color: #bcda5c;
+border:0px;
+color: white;
+margin-left: 20px;
+}
+.header .login a{
+color: white;
+text-decoration: none;
+}
+.header .login:hover{
+background-color: green;
+transition: background 0.5s;
+}
+.minimenu {
+display: none;
+background-color: red;
+border:0; padding: 10px 20px;
+border-radius: 10px; 
+float: right; 
+margin-top: 15px;
+margin-right: 10px; 
+font-size: 30px;
+}
+.minimenu a{
+text-decoration: none;  
+color: white;
+}
+.minimenu a:hover{
+color: black;
+transition: color 0.5s;
+}
+.baner{
+height: 570px;
+background-image: url(img/Baner.png);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.baner p.text1{
+margin: 0;
+font-size: 50px;
+color: white;
+}
+.baner p.text2{
+margin: 0;
+font-size: 35px;
+color: white;
+}
+.baner button{
+border:0px;
+font-size: 20px;
+color: white;
+height: 73px;
+width: 254px;
+background-color: #99c50a;
+border-radius: 10px;
+}
+.baner button a{
+color: white;
+text-decoration: none;
+}
+.baner button:hover{
+background-color: green;
+transition: background 0.5s;    
+}
+@media (min-width: 815px) and (max-width: 1080px) {
+.header img{margin-left:10px;}
+.header button{margin-right: 10px;}
+.header li a {flex-wrap: wrap;display: inline;}
+.header{height: 100%;}
+.header li{padding: 35px 0px;}
+}
+@media (min-width: 570px) and (max-width: 814px) {
+.header nav{display: none; }
+.header {display: block; }
+.header img{margin-top: 20px; margin-left: 20%;}
+.header .login{ margin-top: 25px;position: absolute;}
+.minimenu {display: block;}
+.baner p.text1{word-break: break-all; padding: 0px 20px; text-align: center;}
+}
+@media (min-width: 470px) and (max-width: 569px) {
+.header nav{display: none; }
+.minimenu {display: block;}
+.header {display: block; }
+.header img{margin-top: 20px; margin-left: 5%;}
+.header .login{ margin-top: 25px;position: absolute;}
+.baner p.text1{word-break: break-all; padding: 0px 10px; text-align: center;}
+}
